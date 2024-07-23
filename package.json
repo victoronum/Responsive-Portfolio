@@ -1,0 +1,11 @@
+{
+  "name": "responsiveportfoliosite",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Onum Victor",
+  "license": "MIT"
+}
