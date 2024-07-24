@@ -1,8 +1,10 @@
 @import 'config';
+@import 'menu';
 
 *{
     box-sizing: border-box;
 }
+
 body{
     @include background;
     background: $primary-color;
