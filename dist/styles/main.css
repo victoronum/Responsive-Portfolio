@@ -225,6 +225,42 @@ main#home h1 {
   border-bottom: #eece1a 5px solid;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+}
+.projects img {
+  width: 100%;
+  border: 3px solid white;
+}
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  transition: all 0.5s ease-out;
+}
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.btn:hover, .btn-light:hover, .btn-dark:hover {
+  background: #eece1a;
+  color: black;
+}
+
+.btn-dark {
+  background: black;
+  color: white;
+}
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333;
+}
+
 #main-footer {
   text-align: center;
   padding-top: 1rem;
@@ -233,7 +269,20 @@ main#home h1 {
   height: 60px;
 }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
   main {
     align-items: center;
     text-align: center;
@@ -271,6 +320,9 @@ main#home h1 {
   }
 }
 @media screen and (max-width: 500px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
   main#home h1 {
     margin-top: 10vh;
   }
