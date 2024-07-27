@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
+  "homepage": "https://victoronum.github.io/responsive-portfolio",
   "scripts": {
-    "sass": "sass -w scss/ -o dist/css/ --recursive"
+    "sass": "sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Onum Victor",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
